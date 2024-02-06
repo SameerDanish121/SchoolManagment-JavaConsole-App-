@@ -2,3 +2,6 @@
 bin
 libr
 .classpath
+/dir/
+*.log
+*.*
