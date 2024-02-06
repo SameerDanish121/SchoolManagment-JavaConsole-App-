@@ -2,6 +2,10 @@
 bin
 libr
 .classpath
+<<<<<<< Updated upstream
 /dir/
 *.log
 *.*
+=======
+.
+>>>>>>> Stashed changes
