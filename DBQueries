@@ -1,1 +1,108 @@
 
+--------------------------------------------------------------Student Table Query-----------------------------------
+
+
+USE [mydb]
+GO
+
+/****** Object:  Table [dbo].[student]    Script Date: 1/21/2024 3:49:23 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[student](
+	[ID] [int] NOT NULL,
+	[Name] [varchar](50) NULL,
+	[UserName] [varchar](50) NULL,
+	[Pass] [int] NULL,
+	[Subject_1] [varchar](100) NULL,
+	[Subject_2] [varchar](100) NULL,
+	[Subject_3] [varchar](100) NULL,
+	[Subject_4] [varchar](100) NULL,
+	[Subject_5] [varchar](100) NULL,
+	[Classes_Attended] [int] NULL,
+	[Classes_Conducted] [int] NULL,
+	[Classes_Abesents] [int] NULL,
+	[Attendance_Percentage] [decimal](7, 2) NULL,
+	[Total_Marks] [int] NULL,
+	[Obtained_Marks] [int] NULL,
+	[Result_Percentage] [decimal](7, 2) NULL,
+	[Remarks] [varchar](100) NULL,
+	[Section] [varchar](50) NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
+--------------------------------------------------------------Teacher Table Query-----------------------------------
+
+
+USE [mydb]
+GO
+
+/****** Object:  Table [dbo].[Teacher]    Script Date: 1/21/2024 3:50:27 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Teacher](
+	[ID] [int] NOT NULL,
+	[Name] [varchar](50) NULL,
+	[UserName] [varchar](50) NULL,
+	[Pass] [int] NULL,
+	[Subject] [varchar](50) NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
+
+
+--------------------------------------------------------------Subject Table Query-----------------------------------
+
+USE [mydb]
+GO
+
+/****** Object:  Table [dbo].[Subject]    Script Date: 1/21/2024 3:51:12 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Subject](
+	[Subject_Name] [varchar](100) NULL,
+	[SID] [int] NULL
+) ON [PRIMARY]
+GO
+
+
+
+--------------------------------------------------------------Report Table Query----------------------------------
+USE [mydb]
+GO
+
+/****** Object:  Table [dbo].[Report]    Script Date: 1/21/2024 3:53:27 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Report](
+	[Problem] [varchar](500) NULL,
+	[number] [int] NULL
+) ON [PRIMARY]
+GO
+
+
